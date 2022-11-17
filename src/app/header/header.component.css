@@ -1,0 +1,31 @@
+/* .header{
+    background-color:white ;
+} */
+.header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  padding: 2px;
+  background-color: hsla(0, 0%, 100%, 0.9);
+  z-index: 5;
+  /* overflow: hidden;  */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.01);
+}
+.navbar-brand{
+  margin-left: 5px;
+}
+.nav-link {
+  color: deeppink;
+  margin-right: 50px;
+  padding: 10px;
+  font-weight: 500 !important;
+  font-size: 20px;
+  /* font-family: "Indie Flower", cursive; */
+}
+.active {
+  color: greenyellow!important;
+}
+.navbar-nav li a:hover {
+  color: greenyellow;
+}

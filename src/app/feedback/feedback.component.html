@@ -1,0 +1,188 @@
+<!-- <div class="feedback">
+    <div class="feedbackHeader text-center">Help us to serve you better!</div>
+    <div class="feedbackForm ">
+        <form [formGroup]="feedbackform" (ngSubmit)="submitFeedbackForm()" >
+            <ol>
+                <div class="row mb-4">
+                    <li class="question">Did you like our service?</li>
+                    <div class="form-check col-sm-6">
+                        <input class="form-check-input" type="radio" formControlName="service" value="yes">
+                        <label class="form-check-label" for="yes">Yes</label>
+                    </div>
+                    <div class="form-check col-sm-6">
+                        <input class="form-check-input" type="radio" formControlName="service" value="no">
+                        <label class="form-check-label" for="no">No</label>
+                    </div>
+                </div>
+
+                <div class="row mb-4">
+                    <li class="question">Did you like our product?</li>
+                    <div class="form-check col-sm-6">
+                        <input class="form-check-input" type="radio" formControlName="product" value="yes">
+                        <label class="form-check-label" for="yes">Yes</label>
+                    </div>
+                    <div class="form-check col-sm-6">
+                        <input class="form-check-input" type="radio" formControlName="product"  value="no">
+                        <label class="form-check-label" for="no">No</label>
+                    </div>
+                </div>
+
+                <div class="row mb-4">
+                    <li class="question">Did you like our ambience?</li>
+                    <div class="form-check col-sm-6">
+                        <input class="form-check-input" type="radio" formControlName="ambience" value="yes">
+                        <label class="form-check-label" for="yes">Yes</label>
+                    </div>
+                    <div class="form-check col-sm-6">
+                        <input class="form-check-input" type="radio" formControlName="ambience" value="no">
+                        <label class="form-check-label" for="no">No</label>
+                    </div>
+                </div>
+
+                <div class="row mb-4">
+                    <li class="question">How likely are you recommend your friend and family?</li>
+                    <div class="col-xl-3">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" formControlName="recommend" value="Very likely">
+                        <label class="form-check-label">Very likely</label>
+                      </div>
+                    </div>
+                    <div class="col-xl-3">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" formControlName="recommend" value="Less likely">
+                          <label class="form-check-label">Less likely</label>
+                        </div>
+                    </div>
+                    <div class="col-xl-3">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" formControlName="recommend" value="Absolutely">
+                          <label class="form-check-label">Absolutely</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-4">
+                    <li class="question">When do we hope to see you again?</li>
+                    <div class="col-xl-3">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" formControlName="nextVisit" value="Absolutely">
+                        <label class="form-check-label">Tomorrow</label>
+                      </div>
+                    </div>
+                    <div class="col-xl-3">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" formControlName="nextVisit" value="In a week">
+                          <label class="form-check-label">In a week</label>
+                        </div>
+                    </div>
+                    <div class="col-xl-3">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" formControlName="nextVisit" value="In a month">
+                          <label class="form-check-label">In a month</label>
+                        </div>
+                    </div>
+                    <div class="col-xl-3">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" formControlName="nextVisit" value="In a year">
+                          <label class="form-check-label">In a year</label>
+                        </div>
+                    </div>
+                    <div class="col-xl-3">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" formControlName="nextVisit" value="Never">
+                          <label class="form-check-label">Never</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-4">
+                    <li class="question">Where else do you suggest us to serve you?</li>
+                    <div class="col-xl-3">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" formControlName="suggestion" value="Margao">
+                        <label class="form-check-label">Margao</label>
+                      </div>
+                    </div>
+                    <div class="col-xl-3">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" formControlName="suggestion" value="Mapusa">
+                          <label class="form-check-label">Mapusa</label>
+                        </div>
+                    </div>
+                    <div class="col-xl-3">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" formControlName="suggestion" value="Vasco">
+                          <label class="form-check-label">Vasco</label>
+                        </div>
+                    </div>
+                    <div class="col-xl-3">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" formControlName="suggestion" value="Old goa">
+                          <label class="form-check-label">Old goa</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-4">
+                    <li class="question">How do you come to know about us?</li>
+                    <div class="col-xl-3">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" formControlName="aboutUsInfo" value="Friends/Family">
+                        <label class="form-check-label">Friends/Family</label>
+                      </div>
+                    </div>
+                    <div class="col-xl-3">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" formControlName="aboutUsInfo" value="Internet">
+                          <label class="form-check-label">Internet</label>
+                        </div>
+                    </div>
+                    <div class="col-xl-3">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" formControlName="aboutUsInfo" value="Newspapers">
+                          <label class="form-check-label">Newspapers</label>
+                        </div>
+                    </div>
+                    <div class="col-xl-3">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" formControlName="aboutUsInfo" value="Boards">
+                          <label class="form-check-label">Boards</label>
+                        </div>
+                    </div>
+                    <div class="col-xl-3">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" formControlName="aboutUsInfo" value="Websites">
+                          <label class="form-check-label">Websites</label>
+                        </div>
+                    </div>
+                    <div class="col-xl-3">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" formControlName="aboutUsInfo" value="Random">
+                          <label class="form-check-label">Random</label>
+                        </div>
+                    </div>
+                </div>
+            </ol>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+              <button type="submit" class="btn btn-primary ">Submit</button>
+            </div>
+        </form>
+    </div>
+</div> -->
+
+<div class="feedback">
+  <div class="feedbackHeader text-center">Help us to serve you better!</div>
+  <div class="feedbackForm ">
+    <form [formGroup]="feedbackform"(ngSubmit)="onSubmit()">
+      <label for="">Please write your feedback below!</label>
+      <textarea name="" id="" cols="100" rows="10" formControlName = "feedback"></textarea>
+      <!-- <input type="text" formControlName = "ans"> -->
+      <!-- <ul *ngFor="let q of feedbackQuestions;let i = index;">
+        <div>
+        <li id="qes_{{i}}">Q{{i +1}}. {{q}}</li>
+        <input class="form-control" type="text" id="ans_{{i}}">
+      </div>
+      </ul> -->
+      <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+        <button tyme="submit" class="btn btn-primary">Submit</button>
+      </div>
+    </form>
+  </div>
+</div>

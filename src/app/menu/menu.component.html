@@ -1,0 +1,21 @@
+<div id="menu">
+  <div class="myMenu text-center">
+    <h3 class="heading">My menu</h3>
+  </div>
+  <div class="container">
+    <div class="section3">
+      <div  *ngFor="let item of menuItems">
+        <a [routerLink]="['/menuitems',item.id]">
+        <div class="card" style="width: 18rem;">
+          <img src="{{item.image}}" class="card-img-top" alt="{{item.name}}">
+          <div class="card-body">
+            <h5 class="card-title text-center">{{item.name}}</h5>
+            <p class="card-text text-center">Quantity: {{item.quantity}}</p>
+            <p class="card-text text-center">Type: {{item.type}}</p>
+          </div>
+        </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

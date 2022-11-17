@@ -1,0 +1,18 @@
+<div id="menu">
+    <div class="container">
+      <div class="section3">
+        <div  *ngFor="let coffee of coffeeItems">
+          <a [routerLink]="['/menuitems',coffee['name']]">
+          <div class="card" style="width: 18rem;">
+            <img src="{{coffee['image']}}" class="card-img-top" alt="{{coffee['name']}}">
+            <div class="card-body">
+              <h5 class="card-title text-center">{{coffee['name']}}</h5>
+              <p class="card-text">{{coffee['description']}}</p>
+              <p class="card-text text-center" style="color: black;">Price: Rs.{{coffee['price']}}</p>
+            </div>
+          </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>

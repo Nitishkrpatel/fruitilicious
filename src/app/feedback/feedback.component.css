@@ -1,0 +1,20 @@
+.feedback {
+  margin-top: 160px;
+  background-color: aqua;
+}
+.feedbackHeader {
+  text-shadow: 2px 2px black;
+  padding: 10px;
+  color: white;
+  font-size: 50px;
+}
+.feedbackForm {
+  margin: auto;
+  width: 70%;
+  /* border: 3px solid whitesmoke; */
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 2, 2, 0.6), 0 6px 20px 0 rgba(0, 2, 2, 0.6);
+}
+.question{
+    margin-bottom: 10px;
+}
