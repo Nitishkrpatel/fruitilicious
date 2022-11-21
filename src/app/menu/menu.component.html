@@ -10,8 +10,8 @@
           <img src="{{item.image}}" class="card-img-top" alt="{{item.name}}">
           <div class="card-body">
             <h5 class="card-title text-center">{{item.name}}</h5>
-            <p class="card-text text-center">Quantity: {{item.quantity}}</p>
-            <p class="card-text text-center">Type: {{item.type}}</p>
+            <p class="card-text text-center" *ngIf="item.quantity"><span style="color: grey;">Quantity:</span> {{item.quantity}}</p>
+            <p class="card-text text-center" *ngIf="item.type"><span style="color: grey;">Type:</span> {{item.type}}</p>
           </div>
         </div>
         </a>

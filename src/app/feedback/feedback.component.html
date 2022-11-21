@@ -172,7 +172,7 @@
   <div class="feedbackForm ">
     <form [formGroup]="feedbackform"(ngSubmit)="onSubmit()">
       <label for="">Please write your feedback below!</label>
-      <textarea name="" id="" cols="100" rows="10" formControlName = "feedback"></textarea>
+      <textarea name="" id="" cols="100" rows="10" formControlName = "answer"></textarea>
       <!-- <input type="text" formControlName = "ans"> -->
       <!-- <ul *ngFor="let q of feedbackQuestions;let i = index;">
         <div>
@@ -181,7 +181,7 @@
       </div>
       </ul> -->
       <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-        <button tyme="submit" class="btn btn-primary">Submit</button>
+        <button tyme="submit" class="btn fbutton">Submit</button>
       </div>
     </form>
   </div>

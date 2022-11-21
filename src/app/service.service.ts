@@ -26,9 +26,15 @@ export class ServiceService {
     return this.http.get(url);
   }
 
-  sendFeedback(data:any){
-    console.log(data)
+  sendFeedback(reqData:any){
+    console.log(reqData)
+  //   const headers ={
+  //     header: new HttpHeaders({
+  //         'Content-Type': 'application/json'
+  //     })
+  // }
+    // const data:any =  JSON.stringify(reqData);
     const url = this.baseUrl + "feedback/"
-    return this.http.post(url,data)
+    return this.http.post(url,reqData)
   }
 }

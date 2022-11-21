@@ -1,11 +1,11 @@
 .feedback {
   margin-top: 160px;
-  background-color: aqua;
+  background-color:white;
 }
 .feedbackHeader {
   text-shadow: 2px 2px black;
   padding: 10px;
-  color: white;
+  color:greenyellow;
   font-size: 50px;
 }
 .feedbackForm {
@@ -17,4 +17,10 @@
 }
 .question{
     margin-bottom: 10px;
+}
+.fbutton{
+  background-color: deeppink;
+}
+.fbutton:hover{
+  background-color: greenyellow;
 }

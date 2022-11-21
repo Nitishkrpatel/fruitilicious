@@ -17,8 +17,8 @@ export class FeedbackComponent implements OnInit {
                        "Where else do you suggest us to serve you?",
                        "How do you come to know about us?",]
 
-  feedbackform:FormGroup = new FormGroup({
-   feedback: new FormControl('')
+  feedbackform:any = new FormGroup({
+   answer: new FormControl('')
   })
   constructor(private service:ServiceService) { }
 
@@ -29,10 +29,14 @@ export class FeedbackComponent implements OnInit {
   //   console.log(document.getElementById('qes_' + i)?.innerHTML) 
   // }
   onSubmit(){
-    const reqData = this.feedbackform.value
+    const time:any = new Date();
+    const reqData:any = {question:'feedback',
+                         answer:this.feedbackform.get('answer').value,
+                         timestamp: time.toLocaleString()}
     this.service.sendFeedback(reqData).subscribe(data=>{
 
     });
+    this.feedbackform.setValue({answer:''})
   }
   
 }
