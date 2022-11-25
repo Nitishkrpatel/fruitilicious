@@ -26,6 +26,7 @@ export class ServiceService {
     return this.http.get(url);
   }
 
+  
   sendFeedback(reqData:any){
     console.log(reqData)
   //   const headers ={

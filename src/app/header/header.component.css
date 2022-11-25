@@ -16,7 +16,7 @@
   margin-left: 5px;
 }
 .nav-link {
-  color: deeppink;
+  color: black;
   margin-right: 50px;
   padding: 10px;
   font-weight: 500 !important;
@@ -24,8 +24,17 @@
   /* font-family: "Indie Flower", cursive; */
 }
 .active {
-  color: greenyellow!important;
+  color: #036d58!important;
 }
 .navbar-nav li a:hover {
-  color: greenyellow;
+  color:#036d58;
+}
+@media only screen and (max-width: 767px){
+  img{
+    width: 249px;
+  }
+  .navbar-toggler{
+    margin-right: 2px;
+    color: darkgreen;
+  }
 }

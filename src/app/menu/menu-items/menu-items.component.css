@@ -1,19 +1,19 @@
 #menu{
     margin-top: 125px;
   }
-  .heading{
-    background-color:deeppink;
-    width: 100%;
-    padding: 25px;
+  .row{
+    margin: 0px;
   }
-  .card {
-    margin: 15px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    height: 520px;
+  .menu-card {
+    text-align: center;
+    background-color: #f6f9f9!important;
+    border-radius: 10px;
+    height: 485px;;
+    width: 298px;
+    margin-left: 6px;
+    margin-right: 20px;
+    margin-bottom: 50px;
+    padding:0px 0px 20px 0px;
   }
   .section3 {
     margin-top: 18px;
@@ -22,24 +22,13 @@
     flex-wrap: wrap;
     height: 50%;
   }
-  .card-body .order-btn {
-    margin-left: 70px;
-  }
-  .card-img-top {
-    height: 60%;
-  }
+
   .card-text {
     overflow-x: hidden;
     color: gray;
     padding: 0px;
   }
-  .order-btn {
-    background-color: deeppink;
-  }
-  .order-btn:hover{
-    background-color: greenyellow;
-    color: deeppink;
-  }
+  
   .myMenu h3{
     text-align: center;
     color: greenyellow;
@@ -49,13 +38,12 @@
   }
   a{
     text-decoration: none;
+    color: black;
   }
-  a:hover{
-    color:greenyellow;
-  }
-  .card-title{
-    color: deeppink;
-  }
-  .card-title:hover{
-    color: greenyellow;
+
+  .coffee-img{
+    width: 100%;
+    vertical-align: middle;
+    margin-bottom: 15px;
+    border-radius: 10px  10px 0px 0px;
   }

@@ -1,4 +1,4 @@
-<div id="menu">
+<!-- <div id="menu">
     <div class="container">
       <div class="section3">
         <div  *ngFor="let coffee of coffeeItems">
@@ -15,4 +15,26 @@
         </div>
       </div>
     </div>
+  </div> -->
+<div id="menu">
+  <div class="container">
+    <div class="section3">
+      <div *ngFor="let coffee of coffeeItems">
+        <a [routerLink]="['/menuitems',coffee['name']]">
+          <div class="row">
+            <div class="col-sm-6 menu-card">
+              <img *ngIf="coffee['image'];else noimage" src="{{coffee['image']}}" class="coffee-img" alt="{{coffee['name']}}" height="270">
+              <ng-template #noimage>
+                <img src="https://www.slntechnologies.com/wp-content/uploads/2017/08/ef3-placeholder-image.jpg" class="coffee-img" alt="{{coffee['name']}}" height="270">
+              </ng-template>
+              
+              <h5 class="text-center">{{coffee['name']}}</h5>
+              <p class="description" style="color: grey;">{{coffee['description']}}</p>
+              <p class="price text-center" style="color: black;"><span style="color: grey;">Price:</span> Rs.{{coffee['price']}}</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
   </div>
+</div>

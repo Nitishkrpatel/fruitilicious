@@ -14,6 +14,29 @@
 <body>
   <app-root></app-root>
   <script src="https://kit.fontawesome.com/f346976f02.js" crossorigin="anonymous"></script>
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyBIsSSmuRO0IuSpIDbetvg0glvvOfR9cEU",
+      authDomain: "tidy-rig-355107.firebaseapp.com",
+      projectId: "tidy-rig-355107",
+      storageBucket: "tidy-rig-355107.appspot.com",
+      messagingSenderId: "138414591319",
+      appId: "1:138414591319:web:60e2c8a422be61e1b98212",
+      measurementId: "G-RS6XDP9ZK4"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
 </body>
 
 </html>

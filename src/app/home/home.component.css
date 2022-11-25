@@ -24,7 +24,7 @@
   width: 12px;
   height: 0px;
   border-radius: 50%;
-  background: deeppink;
+  background: black;
 }
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
@@ -35,7 +35,7 @@
   height: 400px;
 }
 .carousel-indicators .active{
- background-color: yellowgreen;
+ background-color: #036d58!important;
 }
 .section3 {
   margin-top: 80px;
@@ -46,6 +46,7 @@
   text-align: center;
 }
 .home-item{
+  align-items: center;
   margin-right: 90px;
   width: 254px;
   height: 194px;
@@ -56,22 +57,30 @@
 }
 .home-item img{
   margin-top: 35px;
+  margin-bottom: 20px;
   width: 100%;
   height: 200px;
   border-radius: 100%;
 }
 .home-item a{
   text-decoration: none;
-  color: deeppink;
-  padding: 10px;
+  color: black;
   font-weight: 600 !important;
-  font-size: 30px;
+  font-size: 19px;
   text-align: center;
 }
-.active {
-  color: greenyellow!important;
+.active ,a:hover{
+  color: #036d58!important;
 }
 .menu-btn{
   text-align: center;
-  max-width: 600px;
+  /* max-width: 600px; */
+}
+@media only screen and (max-width: 767px){
+  .mob-text {
+    text-align: center!important;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;  
+  }
 }

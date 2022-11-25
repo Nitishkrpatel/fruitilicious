@@ -51,3 +51,6 @@
     margin-right: 5px;
     margin-bottom: 10px;
 }
+.download-button:hover{
+  background-color: #036d58;;
+}
