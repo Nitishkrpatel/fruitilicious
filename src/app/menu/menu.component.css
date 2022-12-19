@@ -10,11 +10,21 @@
   border-radius: 10px;
   height: 420px;
   width: 298px;
-  margin-left: 6px;
-  margin-right: 20px;
+  margin-left: 26px;
+  margin-right: 0px;
   margin-bottom: 50px;
   padding:0px 0px 20px 0px;
 }
+.myMenu h3{
+    margin-top: 210px;
+    margin-bottom: 80px;
+    padding: 10px;
+    color: white;
+    font-size: 1.75rem;
+    font-weight: 900!important;
+    background-color: #036d58;
+}
+
 .section3 {
   margin-top: 18px;
   display: flex;
@@ -42,4 +52,9 @@ a:hover{
   vertical-align: middle;
   margin-bottom: 15px;
   border-radius: 10px  10px 0px 0px;
+}
+@media only screen and (max-width: 767px) {
+  .menu-card{
+    margin-left: 32px;
+  }
 }

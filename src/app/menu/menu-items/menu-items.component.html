@@ -1,35 +1,22 @@
-<!-- <div id="menu">
-    <div class="container">
-      <div class="section3">
-        <div  *ngFor="let coffee of coffeeItems">
-          <a [routerLink]="['/menuitems',coffee['name']]">
-          <div class="card" style="width: 18rem;">
-            <img src="{{coffee['image']}}" class="card-img-top" alt="{{coffee['name']}}">
-            <div class="card-body">
-              <h5 class="card-title text-center">{{coffee['name']}}</h5>
-              <p class="card-text">{{coffee['description']}}</p>
-              <p class="card-text text-center" style="color: black;"><span style="color: grey;">Price:</span> Rs.{{coffee['price']}}</p>
-            </div>
-          </div>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div> -->
+
 <div id="menu">
-  <div class="container">
-    <div class="section3">
-      <div *ngFor="let coffee of coffeeItems">
+  <div class="myMenu text-center">
+    <h3 class="heading">{{coffeeItems[0]['type']}}</h3>
+  </div>
+  <div class="container ">
+    <div class="section3 ">
+      <div  *ngFor="let coffee of coffeeItems">
         <a [routerLink]="['/menuitems',coffee['name']]">
-          <div class="row">
+          <div class="row animate__animated animate__zoomIn">
             <div class="col-sm-6 menu-card">
               <img *ngIf="coffee['image'];else noimage" src="{{coffee['image']}}" class="coffee-img" alt="{{coffee['name']}}" height="270">
               <ng-template #noimage>
                 <img src="https://www.slntechnologies.com/wp-content/uploads/2017/08/ef3-placeholder-image.jpg" class="coffee-img" alt="{{coffee['name']}}" height="270">
               </ng-template>
-              
-              <h5 class="text-center">{{coffee['name']}}</h5>
-              <p class="description" style="color: #363636;">{{coffee['description']}}</p>
+              <div class="title">
+                <h5 class="text-center pe-3 ps-3">{{coffee['name']}}</h5>
+              </div>
+              <p class="description" style="color: #363636; padding: 8px;">{{coffee['description']}}</p>
               <p class="price text-center" style="color: black;"><span style="color: #363636;">Price:</span> Rs.{{coffee['price']}}</p>
             </div>
           </div>

@@ -54,3 +54,13 @@
 .download-button:hover{
   background-color: #036d58;;
 }
+@media only screen and (max-width: 767px){
+  .followus{
+    /* font-family: "Indie Flower", cursive; */
+    /* font-family: 'Charmonman', cursive; */
+    font-size: 28px;
+    color:black;
+    line-height: 2;
+    font-weight: 500;
+  }
+}

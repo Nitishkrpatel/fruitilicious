@@ -1,0 +1,80 @@
+#blogs{
+    margin-top: 150px;
+  }
+  .row{
+    margin: 0px;
+  }
+  .menu-card {
+    text-align: center;
+    background-color: #f6f9f9!important;
+    border-radius: 10px;
+    height: 700px;
+    width: 400px;
+    margin-left: 26px;
+    margin-right: 0px;
+    margin-bottom: 50px;
+    padding:0px 0px 20px 0px;
+  }
+  .myblogs h3{
+      margin-top: 210px;
+      margin-bottom: 80px;
+      padding: 10px;
+      color: white;
+      font-size: 1.75rem;
+      font-weight: 900!important;
+      background-color: #036d58;
+  }
+  
+  .section3 {
+    margin-top: 18px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 50%;
+  }
+  
+  .card-text {
+    overflow-x: hidden;
+    color: black;
+    padding: 0px;
+  }
+  
+  a{
+    text-decoration: none;
+    color: black;
+  }
+  a:hover{
+    color:#036d58;
+  }
+  
+  .blog-img{
+    width: 100%;
+    height:max-content;
+    vertical-align: middle;
+    margin-bottom: 15px;
+    border-radius: 10px  10px 0px 0px;
+  }
+
+  .title{
+    margin-left: 0px !important;
+  }
+
+  .readMorebtn{
+    bottom:65px;
+    position:absolute;
+    right:150px ;
+    color: #036d58;
+  }
+
+  .time{
+    color: #a0aec0;
+    font-size: 15px;
+  }
+
+  @media only screen and (max-width: 767px) {
+    .menu-card{
+     padding: 12px;
+     width:100%;
+     margin-left: 5px;
+    }
+  }

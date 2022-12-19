@@ -1,0 +1,30 @@
+<div id="blogs">
+    <div class="myblogs text-center">
+        <h3 class="heading">Blogs</h3>
+    </div>
+    <div class="container">
+        <div class="section3">
+            <div *ngFor="let blog of blogs">
+                <a [routerLink]="['/blogs',blog.id]">
+                    <div class="row animate__animated animate__zoomIn">
+                        <div class="col-sm-6 menu-card">
+                            <img *ngIf="blog['image'];else noimage" src="{{blog['image']}}" class="blog-img"
+                                alt="{{blog['tags']}}" height="270">
+                            <ng-template #noimage>
+                                <img src="https://www.slntechnologies.com/wp-content/uploads/2017/08/ef3-placeholder-image.jpg"
+                                    class="blog-img" alt="{{blog['tags']}}" height="270">
+                            </ng-template>
+                            <div class="text-start pt-1 ps-3 pe-3">
+                                <h6>{{blog['title']}}</h6>
+                                <p class="time">{{blog.timestamp}} | {{blog.author}}</p>
+                                <p class="card-text" style="color: #363636;">{{blog.trimdesc}}...</p>
+                                <p class="time">Tags: {{blog.tags}}</p>
+                            </div>
+                            <h6 class="text-uppercase text-center readMorebtn">Read More</h6>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

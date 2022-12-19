@@ -1,13 +1,69 @@
 .feedback {
   margin-top: 160px;
-  background-color:white;
+  background-color: white;
 }
 .feedbackHeader {
   /* text-shadow: 2px 2px black; */
+  margin-top: 210px;
+  margin-bottom: 80px;
   padding: 10px;
-  color: black;
-  font-size: 50px;
+  color: white;
+  font-size: 1.75rem;
+  font-weight: 900!important;
+  background-color: #036d58;
 }
+button {
+  margin-right: 15px;
+  margin-top: 15px;
+  background-color: black;
+  color: white;
+}
+
+button:hover , ::ng-deep .mat-radio-outer-circle:hover{
+  background-color: #036d58;
+}
+
+label {
+  margin-right: 4px;
+}
+mat-radio-button {
+  margin: 10px 20px;
+}
+
+::ng-deep .mat-step-header .mat-step-icon {
+  background-color: black !important;
+  color: #fff !important;
+}
+::ng-deep .mat-step-header .mat-step-icon-selected,
+.mat-step-header .mat-step-icon-state-done,
+.mat-step-header .mat-step-icon-state-edit {
+  background-color: #036d58 !important;
+}
+::ng-deep .mat-step-header{
+  margin-bottom: 15px !important;
+}
+
+::ng-deep .mat-radio-button.mat-accent .mat-radio-inner-circle {
+  background-color: #036d58 !important;
+}
+
+::ng-deep
+  .mat-radio-button.mat-accent.mat-radio-checked
+  .mat-radio-outer-circle {
+  border-color: #036d58;
+}
+
+
+::ng-deep .mat-step-text-label {
+  color: black;
+  font-size: medium;
+}
+
+::ng-deep .mat-radio-label-content{
+  color:black;
+  margin-left: 5px;
+}
+
 .feedbackForm {
   margin: auto;
   width: 70%;
@@ -15,18 +71,41 @@
   padding: 10px;
   /* box-shadow: 0 4px 8px 0 rgba(0, 2, 2, 0.6), 0 6px 20px 0 rgba(0, 2, 2, 0.6); */
 }
-.question{
-    margin-bottom: 10px;
+
+.question {
+  margin-bottom: 10px;
 }
-.fbutton{
-  background-color:black;
+
+.fbutton {
+  background-color: black;
   color: white;
 }
-.fbutton:hover{
+
+.fbutton:hover {
   background-color: #036d58;
 }
-@media only screen and (max-width: 767px){
-  #feedbackans{
+
+.dropdown-menu {
+ width: max-content;
+ transform: translate(0px,14px)!important;
+}
+.dropdown-heading{
+  /* background-color: #036d58; */
+  color: black;
+  margin-left: 20px;
+  font-weight: 600;
+  margin-top: 15px;
+  margin-bottom: 0px;
+}
+
+@media only screen and (max-width: 767px) {
+  #feedbackans {
     width: 100%;
+  }
+  ::ng-deep .mat-step-text-label {
+    color: black;
+    font-size: medium;
+    text-overflow: inherit;
+    white-space: normal;
   }
 }

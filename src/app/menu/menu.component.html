@@ -1,22 +1,12 @@
 <div id="menu">
-  <!-- <div class="myMenu text-center">
-    <h3 class="heading">My menu</h3>
-  </div> -->
+  <div class="myMenu text-center">
+    <h3 class="heading">Menu</h3>
+  </div>
   <div class="container">
     <div class="section3">
       <div *ngFor="let item of menuItems">
-        <!-- <a [routerLink]="['/menuitems',item.id]">
-        <div class="card" style="width: 18rem;">
-          <img src="{{item.image}}" class="card-img-top" alt="{{item.name}}">
-          <div class="card-body">
-            <h5 class="card-title text-center">{{item.name}}</h5>
-            <p class="card-text text-center" *ngIf="item.quantity"><span style="color: grey;">Quantity:</span> {{item.quantity}}</p>
-            <p class="card-text text-center" *ngIf="item.type"><span style="color: grey;">Type:</span> {{item.type}}</p>
-          </div>
-        </div>
-        </a> -->
         <a [routerLink]="['/menuitems',item.id]">
-          <div class="row">
+          <div class="row animate__animated animate__zoomIn">
             <div class="col-sm-6 menu-card">
               <img *ngIf="item['image'];else noimage" src="{{item['image']}}" class="coffee-img" alt="{{item['name']}}"
                 height="270">
@@ -24,7 +14,7 @@
                 <img src="https://www.slntechnologies.com/wp-content/uploads/2017/08/ef3-placeholder-image.jpg"
                   class="coffee-img" alt="{{item['name']}}" height="270">
               </ng-template>
-              <h5 class="text-center pt-3">{{item['name']}}</h5>
+              <h5 class="text-center pt-3 pe-3 ps-3">{{item['name']}}</h5>
               <p class="card-text text-center" *ngIf="item.quantity"><span style="color: #363636;">Quantity:</span>
                 {{item.quantity}}</p>
               <p class="card-text text-center" *ngIf="item.type"><span style="color: #363636;">Type:</span> {{item.type}}

@@ -1,0 +1,27 @@
+
+<div id="menu">
+    <div class="myMenu text-center">
+      <h3 class="heading">Detox Drinks</h3>
+    </div>
+    <div class="container ">
+      <div class="section3 ">
+        <div  *ngFor="let detoxDrink of detoxDrinks">
+          <a [routerLink]="['/menuitems',detoxDrink['name']]">
+            <div class="row animate__animated animate__zoomIn">
+              <div class="col-sm-6 menu-card">
+                <img *ngIf="detoxDrink['image'];else noimage" src="{{detoxDrink['image']}}" class="coffee-img" alt="{{detoxDrink['name']}}" height="270">
+                <ng-template #noimage>
+                  <img src="https://www.slntechnologies.com/wp-content/uploads/2017/08/ef3-placeholder-image.jpg" class="coffee-img" alt="{{detoxDrink['name']}}" height="270">
+                </ng-template>
+                <div class="title">
+                    <h5 class="text-center pe-3 ps-3" >{{detoxDrink['name']}}</h5>
+                </div>
+                <p class="description" style="color: #363636; padding: 8px;">{{detoxDrink['description']}}</p>
+                <p class="price text-center" style="color: black;"><span style="color: #363636;">Price:</span> Rs.{{detoxDrink['price']}}</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>

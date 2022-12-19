@@ -21,14 +21,34 @@ export class ServiceService {
     const url = this.baseUrl + "menuitem/"
     return this.http.get(url);
   }
-  getcoffeData(id:number){
+
+  getMenuItemsData(id:number){
     const url = this.baseUrl + "item/?menuItem=" + id;
+    return this.http.get(url);
+  }
+
+  getBlogs(){
+    const url = this.baseUrl + "blogs/"
+    return this.http.get(url);
+  }
+
+  blogDetailsData(id:number){
+    const url = this.baseUrl + "blogs/" + id +"/";
+    return this.http.get(url);
+  }
+
+  getDetoxDrinkData(){
+    const url = this.baseUrl + "item/?menuItem=12"
+    return this.http.get(url);
+  }
+
+  getCoolingDrinkData(){
+    const url = this.baseUrl + "item/?menuItem=13"
     return this.http.get(url);
   }
 
   
   sendFeedback(reqData:any){
-    console.log(reqData)
   //   const headers ={
   //     header: new HttpHeaders({
   //         'Content-Type': 'application/json'

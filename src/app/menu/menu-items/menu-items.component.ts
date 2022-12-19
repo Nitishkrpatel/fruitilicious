@@ -16,7 +16,7 @@ export class MenuItemsComponent implements OnInit {
   }
   coffeeData() {
     let id = this.route.snapshot.params['id'];
-    this.service.getcoffeData(id).subscribe((data:any)=> {
+    this.service.getMenuItemsData(id).subscribe((data:any)=> {
     this.coffeeItems = data.data;
     });
   }
